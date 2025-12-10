@@ -10,69 +10,39 @@ h1 {
   font-size: xx-small;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
 body {
-  background-color: rgb(4, 151, 161);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, rgb(133, 10, 1), rgb(255, 150, 30));
+  font-family: "Sansita Swashed", cursive;
 }
 
 /* Layout */
 
 .middle {
-  width: 90px;
   margin: 0 auto;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: xx-large;
+  text-align: center;
+}
+
+[type="text"] {
+  text-align: center;
 }
 
 .label {
   width: 90px;
+  text-align: center;
 }
 
 #nameInput {
-  width: 900px;
-}
-
-[type="checkbox"] {
-  opacity: 2;
-}
-[type="checkbox"] + input {
-  position: relative;
-  padding-left: 30px;
-  cursor: pointer;
-  display: inline-block;
-  color: #666;
-}
-
-[type="checkbox"] + input::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 18px;
-  height: 18px;
-  outline: 2px solid #aaa;
-  background: #fff;
-}
-
-[type="checkbox"]:checked + input::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 18px;
-  height: 18px;
-  outline: 2px solid #00a508;
-  background: #fff;
-}
-
-[type="checkbox"]:checked + input::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 18px;
-  height: 18px;
-  background-image: url("/pictures/happyhammy.png");
-  background-size: contain;
+  width: 175px;
 }
 
 [class="confirm-button"] {
@@ -82,8 +52,4 @@ body {
 
 p {
   width: 4000px;
-}
-
-option {
-  outline-color: #fff;
 }
