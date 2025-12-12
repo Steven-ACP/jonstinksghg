@@ -7,7 +7,12 @@
 }
 
 h1 {
-  font-size: xx-small;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Sets the container height to the full viewport height */
+  width: 100%; /* Ensures container spans full width */
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
@@ -30,6 +35,11 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: xx-large;
   text-align: center;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Sets the container height to the full viewport height */
+  width: 100%; /* Ensures container spans full width */
 }
 
 [type="text"] {
@@ -37,16 +47,36 @@ body {
 }
 
 .label {
-  width: 90px;
   text-align: center;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Sets the container height to the full viewport height */
+  width: 100%; /* Ensures container spans full width */
 }
 
 #nameInput {
   width: 175px;
 }
 
+.container {
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100vh; /* Sets the container height to the full viewport height */
+  width: 100%; /* Ensures container spans full width */
+}
+
+input[type="text"] {
+  /* Optional: centers the *text* inside the input box as well */
+  text-align: center;
+}
 [class="confirm-button"] {
-  width: 90px;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
   margin: 0 auto;
 }
 
