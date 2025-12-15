@@ -2,26 +2,29 @@
 
 let submitButton = document.getElementById("submitBtn");
 //
-submitButton.addEventListener("click", button);
+submitButton.addEventListener("click", getWords);
+function getWords() {}
 
-function button() {
-  let inputName = document.getElementById("nameInput");
-  let inputAge = document.getElementById("ageInput");
-  let inputLocation = document.getElementById("locationInput");
-  let inputPet = document.getElementById("petInput");
-  let inputJob = document.getElementById("jobInput");
-  
-  let value = inputName.value;
-  let ageValue = inputAge.value;
-  let locationValue = inputLocation.value;
-  let petValue = inputPet.value;
-  let jobValue = inputJob.value;
+let words = document.querySelectorAll("input[type='text']");
+console.log(words);
 
-  
-  document.getElementById("outPut").textContent =
-    
-  //  "Your Job(s)" +
-  // radioValue +
-  // "Your Pet" +
-  // petValue;
-}
+//function button() {
+//  let inputName = document.getElementById("nameInput");
+//  let inputAge = document.getElementById("ageInput");
+//  let inputLocation = document.getElementById("locationInput");
+//  let inputPet = document.getElementById("petInput");
+// let inputJob = document.getElementById("jobInput");
+
+// let value = inputName.value;
+//let ageValue = inputAge.value;
+//let locationValue = inputLocation.value;
+//let petValue = inputPet.value;
+//let jobValue = inputJob.value;
+
+//  document.getElementById("outPut").textContent =
+
+//  "Your Job(s)" +
+// radioValue +
+// "Your Pet" +
+// petValue;
+//}
