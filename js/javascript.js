@@ -1,13 +1,17 @@
 /** @format */
-
+//button
 let submitButton = document.getElementById("submitBtn");
-//
+
 submitButton.addEventListener("click", getWords);
-function getWords() {}
+function getWords() {
+  let words = document.querySelectorAll("input[type='text']");
 
-let words = document.querySelectorAll("input[type='text']");
-console.log(words);
+  var placeholders = document.querySelectorAll(".question");
 
+  placeholders.forEach((placeholder, index) => {
+    console.log(words[index].value);
+  });
+}
 //function button() {
 //  let inputName = document.getElementById("nameInput");
 //  let inputAge = document.getElementById("ageInput");

@@ -11,8 +11,8 @@ h1 {
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
-  height: 100vh; /* Sets the container height to the full viewport height */
-  width: 100%; /* Ensures container spans full width */
+  height: 10vh; /* Sets the container height to the full viewport height */
+  width: 10%; /* Ensures container spans full width */
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
