@@ -1,4 +1,5 @@
 /** @format */
+
 //button
 let submitButton = document.getElementById("submitBtn");
 
@@ -6,10 +7,12 @@ submitButton.addEventListener("click", getWords);
 function getWords() {
   let words = document.querySelectorAll("input[type='text']");
 
-  var placeholders = document.querySelectorAll(".question");
+  var placeholders = document.querySelectorAll(".userInput");
 
   placeholders.forEach((placeholder, index) => {
-    console.log(words[index].value);
+    placeholder.innerHTML = words[index].value;
+
+    // console.log(words[index].value);
   });
 }
 //function button() {
